@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/* Mobile */
+.card {
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(120, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-text {
+  color: #111827;
+  font-size: 16px;
+}
+
+.card-btn {
+  align-self: start;
+  background: blue;
+  color: white;
+  border: 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .card {
+    width: 80%;
+    padding: 20px;
+    margin: 24px auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .card {
+    width: 400px;
+    padding: 20px;
+    margin: 40px auto;
+  }
+}
